@@ -83,6 +83,9 @@ img { display: block; max-width: 100%; }
   padding: 2rem 1.5rem;
 }
 
+.search-bar input::placeholder {
+  font-size: 0.85rem;}
+
 .search-bar input {
   flex: 1;
   max-width: 400px;
@@ -96,6 +99,7 @@ img { display: block; max-width: 100%; }
 }
 
 .search-bar input::placeholder { color: var(--text-muted); }
+
 
 .search-bar button {
   background: var(--accent);
