@@ -10,18 +10,22 @@ function SearchBar({ onSearch, loading }) {
   }
 
   return (
+
     <form className="search-bar" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="List your ingredient(s), separating each with a comma (e.g., Vodka, mint, orange"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      {}
-      <button type="submit" disabled={loading}>
-        {loading ? 'Searching...' : 'Generate'}
-      </button>
-    </form>
+  <label>List your ingredient(s), separating each with a comma</label>
+  <div className="search-input-row">
+    <input
+      type="text"
+      placeholder="e.g., Vodka, mint, orange"
+      value={input}
+      onChange={(e) => setInput(e.target.value)}
+    />
+
+    <button type="submit" disabled={loading}>
+      Generate
+    </button>
+  </div>
+</form>
   )
 }
 
